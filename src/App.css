@@ -6,6 +6,60 @@
   height: 40vmin;
   pointer-events: none;
 }
+/* src/App.css */
+.App {
+  text-align: center;
+}
+
+.movie-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.movie-poster {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 8px;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.add-movie, .filter {
+  margin: 16px;
+}
+
+.add-movie input,
+.filter input {
+  margin: 8px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.add-movie button,
+.filter button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.add-movie button:hover,
+.filter button:hover {
+  background-color: #0056b3;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -21,7 +75,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(11, 11, 11);
 }
 
 .App-link {
